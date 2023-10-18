@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.message-box {
+    position: relative;
+    cursor: pointer;
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+
+    border-style: solid;
+    border-color:lavenderblush;
+    box-shadow: 
+            10px -10px 0 -3px #F9F9F9, 10px -10px #FFB3B3,
+            20px -20px 0 -3px #F9F9F9, 20px -20px #FFDBA4,
+            30px -30px 0 -3px #F9F9F9, 30px -30px #F6C6EA;
+
+            transition: box-shadow 1s, top 1s, left, 1s;
+            top: 0;
+            left: 0;
+}
+
+.message-box:hover {
+    top: -30px;
+    left: 30px;
+    box-shadow: 
+    0 0 0 -3px #F9F9F9, 0 0 #FFB3B3,
+    0 0 0 -3px #F9F9F9, 0 0 #FFDBA4,
+    0 0 0 -3px #F9F9F9, 0 0 #F6C6EA;
+}
